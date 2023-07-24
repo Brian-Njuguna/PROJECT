@@ -16,52 +16,52 @@ const FAQ =() =>{
             <Accordion defaultExpanded>
                 <Accordionsummary expandIcon={<ExpandMoreIcon/>}>
                     <Typography color={colors.greenAccent[500]} variant ="h5">
-                        An important question
+                        Frequently asked questions
                     </Typography>
 
                 </Accordionsummary>
                 <AccordionDetails>
                     <Typography>
-                        What is mental health?
+                        What are you skills
                     </Typography>
                 </AccordionDetails>
             </Accordion>
             <Accordion defaultExpanded>
                 <Accordionsummary expandIcon={<ExpandMoreIcon/>}>
                     <Typography color={colors.greenAccent[500]} variant ="h5">
-                        An important question
+                        Frequently asked question
                     </Typography>
 
                 </Accordionsummary>
                 <AccordionDetails>
                     <Typography>
-                        What is mental health?
+                        How many years of experience do you have
                     </Typography>
                 </AccordionDetails>
             </Accordion>
             <Accordion defaultExpanded>
                 <Accordionsummary expandIcon={<ExpandMoreIcon/>}>
                     <Typography color={colors.greenAccent[500]} variant ="h5">
-                        important question
+                        Frequently asked question
                     </Typography>
 
                 </Accordionsummary>
                 <AccordionDetails>
                     <Typography>
-                        How many people are affected by mental Health
+                         Sample projects
                     </Typography>
                 </AccordionDetails>
             </Accordion>
             <Accordion defaultExpanded>
                 <Accordionsummary expandIcon={<ExpandMoreIcon/>}>
                     <Typography color={colors.greenAccent[500]} variant ="h5">
-                        Another important question
+                        Another Frequently asked question
                     </Typography>
 
                 </Accordionsummary>
                 <AccordionDetails>
                     <Typography>
-                        Is mental health really important?
+                        Which languages are you conversant with
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -74,7 +74,7 @@ const FAQ =() =>{
                 </Accordionsummary>
                 <AccordionDetails>
                     <Typography>
-                        Does Mental health affect everyone?
+                        Can you work under pressure
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -87,7 +87,7 @@ const FAQ =() =>{
                 </Accordionsummary>
                 <AccordionDetails>
                     <Typography>
-                        What is mental health?
+                        Where do you see yourself in the next 5 years
                     </Typography>
                 </AccordionDetails>
             </Accordion>
