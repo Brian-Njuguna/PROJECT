@@ -182,7 +182,7 @@ const Projects = () => {
                 Description
               </Typography>
               <Typography color={colors.blueAccent[100]} fontWeight="600" fontSize="13px">
-               Inpired by my brother who is a Gym instructor I created this project to help him gain online customers
+               Inpired by my brother who is a Sport Scientist I created this project to help him gain online customers
                and also help his customers access his services from the comfort of their home.It consists of a subscription 
                and online payment method.Please feel free to subscribe to some of his services
               </Typography>
