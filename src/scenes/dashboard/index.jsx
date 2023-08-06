@@ -1,4 +1,4 @@
-import { Box, Button, IconButton, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { mockTransactions } from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
@@ -14,6 +14,8 @@ import { useNavigate} from 'react-router-dom';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import "./styles.css"
+import {useMediaQuery} from 'react-responsive';
+
 
 
 
@@ -21,13 +23,24 @@ const Dashboard = ({selected,setSelected}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const navigate = useNavigate();
-
+  const isDesktopOrLaptop = useMediaQuery({
+    query:'(min-width:1224px)'
+  })
+  const isBigScreen = useMediaQuery({query:'(min-width:1824px)'})
+  const isTabletorMobile = useMediaQuery({query:'(max-width:1224px)'})
+  const isPortrait = useMediaQuery({query:'(orientation:portrait)'})
+  const isRetina = useMediaQuery({query:'(min-resolution:2dppx)'})
   const navigateToprojects =() =>{
     navigate('/projects')
   };
 
   return (
-    <Box m="20px">
+    
+    <Box m="20px"
+      width="100%"
+      height="25%"
+    
+    >
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to My Portfolio" />
@@ -49,6 +62,8 @@ const Dashboard = ({selected,setSelected}) => {
       </Box>
 
       {/* GRID & CHARTS */}
+      
+      <Stack direction="row">
       <Box
         display="grid"
         gridTemplateColumns="repeat(12, 1fr)"
@@ -56,6 +71,7 @@ const Dashboard = ({selected,setSelected}) => {
         gap="20px"
       >
         {/* ROW 1 */}
+        <Stack direction="row">
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -63,6 +79,7 @@ const Dashboard = ({selected,setSelected}) => {
           alignItems="center"
           justifyContent="center"
         >
+      
           <StatBox
             title="EMAIL"
             subtitle="Email"
@@ -112,9 +129,14 @@ const Dashboard = ({selected,setSelected}) => {
               />
             }
           />
+        
         </Box>
+        </Stack>
+        
+       
 
         {/* ROW 2 */}
+        <Stack direction="row">
         <Box
           gridColumn="span 8"
           gridRow="span 2"
@@ -122,17 +144,9 @@ const Dashboard = ({selected,setSelected}) => {
           borderBottom={`4px solid ${colors.primary[500]}`}
           display ="flex"
         >
+          <Stack direction="column">
           
-          <Box
-            mt="25px"
-            p="0 30px"
-            display="flex "
-            justifyContent="space-between"
-            alignItems="center"
-            selected={selected}
-            setSelected={setSelected}
-            borderBottom={`4px solid ${colors.primary[500]}`}
-          >
+           
             <Box
              gridColumn="span 5"
              backgroundColor={colors.primary[600]}
@@ -153,7 +167,7 @@ const Dashboard = ({selected,setSelected}) => {
   
   
             ><Typography>Sample Projects</Typography></Box> 
-              <Stack direction="column" spacing={2} borderBottom={`4px solid ${colors.primary[500]}`} borderBottom={`4px solid ${colors.primary[500]}`}>
+
               <Box display="flex" 
               justifyContent="center"
               alignItems="center" 
@@ -202,8 +216,8 @@ const Dashboard = ({selected,setSelected}) => {
               </Box>
              
               
-              </Stack>
-              <Stack  direction="column" spacing={2} color={colors.blueAccent[700]}>
+              
+              
               <Box display="flex" 
               justifyContent="center" 
               alignItems="center" 
@@ -249,19 +263,36 @@ const Dashboard = ({selected,setSelected}) => {
                 </button>
                 </Box>
               </Box>
-              </Stack>
+            
+          
            
             </Box>
-          </Box>
+          
+          </Stack>
+          
+      
           
         </Box>
+      
+        
+       
+        
+      
         
           
       
 
        
+     
       </Box>
+      
+      </Stack>
+      </Stack>
+      
+      
+    
     </Box>
+    
   );
 };
 export default Dashboard;

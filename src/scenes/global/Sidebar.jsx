@@ -120,14 +120,7 @@ const Sidebar = () => {
           )}
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
-            <Item
-              title="Dashboard"
-              to="/"
-              icon={<HomeOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-
+            
             <Typography
               variant="h6"
               color={colors.grey[300]}
@@ -136,8 +129,8 @@ const Sidebar = () => {
               Data
             </Typography>
             <Item
-              title="Resume"
-              to="/resume"
+              title="Projects"
+              to="/projects"
               icon={<CloudDownloadRoundedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -150,8 +143,8 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Projects"
-              to="/projects"
+              title="Resume"
+              to="/resume"
               icon={<  AccountTreeRoundedIcon/>}
               selected={selected}
               setSelected={setSelected}

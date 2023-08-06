@@ -3,7 +3,7 @@ import { CssBaseline,ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
 import { Routes,Route } from "react-router-dom";
 import Sidebar from "./scenes/global/Sidebar"; 
-import Dashboard from "./scenes/dashboard";
+
 import Resume from "./scenes/resume";
 import Projects from "./scenes/projects";
 import Contacts from "./scenes/contacts";
@@ -22,7 +22,7 @@ function App() {
         <main className = "content">
           <Topbar />
           <Routes>
-            <Route path="/" element ={<Dashboard/>}/>
+            {<Route path="/" element ={<Projects/>}/>}
             {<Route path="/resume" element ={<Resume/>}/>}
             {<Route path="/contacts" element ={<Contacts/>}/>}
             {<Route path="/projects" element ={<Projects/>}/>}
