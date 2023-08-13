@@ -34,7 +34,7 @@ const Projects = () => {
         </Box>
       </Box>
     <Box
-    display="grid"
+     display="grid"
     gridTemplateColumns="repeat(12,1fr)"
     gridAutoRows="200px"
     gap="20px"    
@@ -44,6 +44,8 @@ const Projects = () => {
         <Box
           gridColumn="span3"
           backgroundColor={colors.primary[400]}
+          boxShadow="inset 5px 5px 10px #000000 , 
+  inset -5px -5px 10px blue;"
           display="flex"
           alignItems="top"
           justifyContent="top"
@@ -58,7 +60,7 @@ const Projects = () => {
           }}
         >
            
-        <Box display="flex" justifyContent="top" alignItems="top" backgroundColor="#030b1c" boxShadow=" inset 5px 5px 10px #000000, 
+        <Box display="flex" justifyContent="top" alignItems="top" backgroundColor="#030b1c" boxShadow="inset 5px 5px 10px #000000 , 
   inset -5px -5px 10px blue;">
                 <img
                   alt="profile-user"
@@ -94,6 +96,8 @@ const Projects = () => {
         <Box
           gridColumn="span3"
           backgroundColor={colors.primary[400]}
+          boxShadow="inset 5px 5px 10px #000000 , 
+  inset -5px -5px 10px blue;"
           display="flex"
           alignItems="top"
           justifyContent="top"
@@ -131,7 +135,8 @@ const Projects = () => {
                 it gets better in that it allows you to auto reply to tweets and also like retweet tweets that are of a certain 
                 creteria or topic
               </Typography>
-              <Link to=".." relative="path">
+              <Link  color="red
+              "to=".." relative="path" >
                   Click to visit Tweepy-Bot project
               </Link>
             
@@ -150,6 +155,8 @@ const Projects = () => {
        <Box
           gridColumn="span3"
           backgroundColor={colors.primary[400]}
+          boxShadow="inset 5px 5px 10px #000000 , 
+  inset -5px -5px 10px blue;"
           display="flex"
           alignItems="top"
           justifyContent="top"
@@ -199,6 +206,8 @@ const Projects = () => {
         <Box
           gridColumn="span3"
           backgroundColor={colors.primary[400]}
+          boxShadow="inset 5px 5px 10px #000000 , 
+  inset -5px -5px 10px blue;"
           display="flex"
           alignItems="top"
           justifyContent="top"

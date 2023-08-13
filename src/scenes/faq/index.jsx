@@ -39,58 +39,7 @@ const FAQ =() =>{
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion defaultExpanded>
-                <Accordionsummary expandIcon={<ExpandMoreIcon/>}>
-                    <Typography color={colors.greenAccent[500]} variant ="h5">
-                        Frequently asked question
-                    </Typography>
-
-                </Accordionsummary>
-                <AccordionDetails>
-                    <Typography>
-                         Sample projects
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion defaultExpanded>
-                <Accordionsummary expandIcon={<ExpandMoreIcon/>}>
-                    <Typography color={colors.greenAccent[500]} variant ="h5">
-                        Another Frequently asked question
-                    </Typography>
-
-                </Accordionsummary>
-                <AccordionDetails>
-                    <Typography>
-                        Which languages are you conversant with
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion defaultExpanded>
-                <Accordionsummary expandIcon={<ExpandMoreIcon/>}>
-                    <Typography color={colors.greenAccent[500]} variant ="h5">
-                        Random important question
-                    </Typography>
-
-                </Accordionsummary>
-                <AccordionDetails>
-                    <Typography>
-                        Can you work under pressure
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion defaultExpanded>
-                <Accordionsummary expandIcon={<ExpandMoreIcon/>}>
-                    <Typography color={colors.greenAccent[500]} variant ="h5">
-                        Favourite important question
-                    </Typography>
-
-                </Accordionsummary>
-                <AccordionDetails>
-                    <Typography>
-                        Where do you see yourself in the next 5 years
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
+            
         </Box>
     );
 

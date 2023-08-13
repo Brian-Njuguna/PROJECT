@@ -50,7 +50,8 @@ const Resume= () => {
             },
           }}
         >
-              <Box justifyContent="left" alignItems="left">
+              <Box justifyContent="left" alignItems="left" boxShadow="inset -5px -5px 10px #000000 , 
+  inset 5px 5px 10px  blue;">
                 <Typography justifyContent="center" alignItems="center" fontSize="30px" fontWeight="600" padding="10px 20px" color={colors.greenAccent[500]}>
                   RESUME
                 </Typography>
@@ -58,7 +59,7 @@ const Resume= () => {
               <Typography fontWeight="bold" color={colors.blueAccent[400]} fontSize="15px">
                 Key Proffesional Skills
               </Typography>
-              <Typography dispaly="block" color={colors.grey[100]} fontWeight="100" fontSize="15px" fontFamily="Oswald">
+              <Typography dispaly="flex" color={colors.grey[100]} fontWeight="100" fontSize="15px" fontFamily="Oswald">
               ~ Computer skills: Proficient in programming languages such as Python, C++ and C, with experience developing both web and desktop applications.Skilled in database management and design, with expertise in SQL databases.Additional skills include experience in software development tools such as Visual Studio code. I also have skills in operating Debian operating systems such as Ubuntu and Kali Linux.<br/>
     ~ Networking skills: Proficient in configuring and maintaining network infrastructure, including routers, switches, firewalls and access points. Skilled in network design and implementation, with expertise in TCP/IP, DNS, DHCP and VLANS.<br/> Additional skills include troubleshooting and resolving network issues, implementing network security measures, and familiarity with network monitoring tools such as Wireshark. 
     <br/>~ Problem-solving skills: This involves identifying and solving problems in a creative and efficient way.

@@ -15,7 +15,7 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import "./styles.css"
 import {useMediaQuery} from 'react-responsive';
-
+import Brian from '/public/assets/Brian%20resume2.docx'
 
 
 
@@ -23,15 +23,15 @@ const Dashboard = ({selected,setSelected}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const navigate = useNavigate();
-  const isDesktopOrLaptop = useMediaQuery({
-    query:'(min-width:1224px)'
-  })
-  const isBigScreen = useMediaQuery({query:'(min-width:1824px)'})
-  const isTabletorMobile = useMediaQuery({query:'(max-width:1224px)'})
-  const isPortrait = useMediaQuery({query:'(orientation:portrait)'})
-  const isRetina = useMediaQuery({query:'(min-resolution:2dppx)'})
   const navigateToprojects =() =>{
     navigate('/projects')
+    const handleDownload = () => {
+      const link = document.createElement('a');
+      link.download ='Resume';
+
+      link.href =Brian;
+      link.click();
+    }
   };
 
   return (
@@ -54,7 +54,9 @@ const Dashboard = ({selected,setSelected}) => {
               fontWeight: "bold",
               padding: "10px 20px",
             }}
+            onClick={handleDownload}
           >
+
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
             Download Resume
           </Button>
