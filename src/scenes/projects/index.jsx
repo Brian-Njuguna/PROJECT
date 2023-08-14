@@ -8,12 +8,21 @@ import Stack from "@mui/material/Stack";
 import Header from "../../components/Header";
 import {Link} from  "react-router-dom";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
+import {useMediaQuery} from 'react-responsive';
 
 const Projects = () => {
     const theme = useTheme ();
     const colors = tokens(theme.palette.mode);
    return(
-    <Box m="20px">
+    <Box m="20px"
+    sx ={{flexDirection:'row-reverse',
+    width:'100%',
+    height:'100%',
+  
+  }}
+    
+    
+    >
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="PROJECTS" subtitle="Welcome to My Projects" />
@@ -77,7 +86,7 @@ const Projects = () => {
                 <Typography fontWeight="bold" color={colors.greenAccent[400]}>
                 Description
               </Typography>
-              <Typography color={colors.blueAccent[100]} fontWeight="600" fontSize="13px">
+              <Typography color={colors.blueAccent[100]} fontWeight="400" fontSize="13px" fontFamily="Oswald">
                 Youtube clone is a simple project that is used to stream videos and movies.It was developed using react 
                 framework and is integrated with popular APIs that help in accessing videos,
                 it gets better in that it allows you to watch any movie and any music video on the internet.Please feel 
@@ -129,7 +138,7 @@ const Projects = () => {
                 <Typography fontWeight="bold" color={colors.greenAccent[400]}>
                 Description
               </Typography>
-              <Typography color={colors.blueAccent[100]} fontWeight="600" fontSize="13px">
+              <Typography color={colors.blueAccent[100]} fontWeight="400" fontSize="13px" fontFamily="Oswald">
                 Tweepy-Bot is a simple project that is used to stream tweets and auto comment.It was developed using python 
                 programming language and is integrated with popular APIs such as tweepy that help in accessing live tweets,
                 it gets better in that it allows you to auto reply to tweets and also like retweet tweets that are of a certain 
@@ -188,10 +197,10 @@ const Projects = () => {
                 <Typography fontWeight="bold" color={colors.greenAccent[400]}>
                 Description
               </Typography>
-              <Typography color={colors.blueAccent[100]} fontWeight="600" fontSize="13px">
+              <Typography color={colors.blueAccent[100]} fontWeight="400" fontSize="13px" fontFamily="Oswald">
                Inpired by my brother who is a Sport Scientist I created this project to help him gain online customers
                and also help his customers access his services from the comfort of their home.It consists of a subscription 
-               and online payment method.Please feel free to subscribe to some of his services
+               and online payment method.Please feel free to subscribe to some of his services .
               </Typography>
               <Link to=".." relative="path">
                   Click to visit Quest-Gym project
@@ -239,11 +248,11 @@ const Projects = () => {
                 <Typography fontWeight="bold" color={colors.greenAccent[400]}>
                 Description
               </Typography>
-              <Typography color={colors.blueAccent[100]} fontWeight="600" fontSize="13px">
+              <Typography color={colors.blueAccent[100]} fontWeight="400" fontSize="13px" fontFamily="Oswald">
                 Netflix clone is a simple project that is used to stream movies.It was developed using react 
                 framework and is integrated with popular APIs that help in accessing videos,
                 it gets better in that it allows you to watch any movie  on the internet.The only difference with 
-                youtube clone is that you can only watch movies and not music videos.
+                youtube clone is that you can only watch movies and not music videos.<br/>Thank You
               </Typography>
               <Link to=".." relative="path">
                   Click to visit Netflix Clone project

@@ -13,7 +13,9 @@ const Resume= () => {
     const theme = useTheme ();
     const colors = tokens(theme.palette.mode);
     return(
-        <Box m="20px">
+        <Box m="20px"
+        sx ={{flexDirection:'row-reverse'}}
+        >
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="RESUME" subtitle="Welcome To a Sample of My Resume" />
@@ -41,8 +43,8 @@ const Resume= () => {
           alignItems="top"
           justifyContent="top"
           sx={{
-            width: 1000,
-            height: 500,
+            width: '100%',
+            height: '100%',
             backgroundColor: 'primary.dark',
             '&:hover': {
               backgroundColor: 'primary.main',
@@ -59,11 +61,11 @@ const Resume= () => {
               <Typography fontWeight="bold" color={colors.blueAccent[400]} fontSize="15px">
                 Key Proffesional Skills
               </Typography>
-              <Typography dispaly="flex" color={colors.grey[100]} fontWeight="100" fontSize="15px" fontFamily="Oswald">
+              <Typography dispaly="flex" color={colors.blueAccent[300]} fontWeight="200" fontSize="15px" fontFamily="Oswald">
               ~ Computer skills: Proficient in programming languages such as Python, C++ and C, with experience developing both web and desktop applications.Skilled in database management and design, with expertise in SQL databases.Additional skills include experience in software development tools such as Visual Studio code. I also have skills in operating Debian operating systems such as Ubuntu and Kali Linux.<br/>
-    ~ Networking skills: Proficient in configuring and maintaining network infrastructure, including routers, switches, firewalls and access points. Skilled in network design and implementation, with expertise in TCP/IP, DNS, DHCP and VLANS.<br/> Additional skills include troubleshooting and resolving network issues, implementing network security measures, and familiarity with network monitoring tools such as Wireshark. 
+    ~ Networking skills: Proficient in configuring and maintaining network infrastructure, including routers, switches, firewalls and access points. Skilled in network design and implementation, with expertise in TCP/IP, DNS, DHCP and VLANS.<br/>~ Additional skills include troubleshooting and resolving network issues, implementing network security measures, and familiarity with network monitoring tools such as Wireshark. 
     <br/>~ Problem-solving skills: This involves identifying and solving problems in a creative and efficient way.
-    <br/>~ Adaptability and flexibility: I can adapt to changing circumstances and remain flexible in the face of challenges.
+    <br/>~ Adaptability and flexibility: I can adapt to changing circumstances and remain flexible in the face of challenges.<br/>~ An ability to anticipate and analyse problems and to trace them to their root cause. <br/>~ Meticulous attention to detail. 
               </Typography>
               
             
